@@ -6,7 +6,7 @@ describe SchoolResults do
     expect(subject.check_result("Green")).to eq "Green: 1"
   end
 
-  it "returns a string with result value and total of the value" do
+  it "returns a string with result and its total value" do
     expect(subject.check_result("Green, Green")).to eq "Green: 2"
   end
 

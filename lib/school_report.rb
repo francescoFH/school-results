@@ -1,7 +1,7 @@
 class SchoolResults
 
   def check_result(string)
-    results = string.split
+    results = string.split(", ")
 
     tot_results = Hash.new(0)
 

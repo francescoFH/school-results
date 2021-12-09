@@ -2,6 +2,8 @@ class SchoolResults
 
   def check_result(string)
 
+    return "No result given" if string.empty?
+    
     results = string.split(", ")
 
     tot_results = Hash.new(0)
@@ -13,7 +15,7 @@ class SchoolResults
     tot_results.each do |k, v|
       puts "#{k}: #{v}"
     end
-    
+
   end
 
 end

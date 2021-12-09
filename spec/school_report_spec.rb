@@ -13,4 +13,9 @@ describe SchoolResults do
   it "returns a string of the different results with their total values" do
     expect { subject.check_result("Green, Red, Green") }.to output("Green: 2\nRed: 1\n").to_stdout
   end
+
+  it "returns error message if string is empty" do
+    expect(subject.check_result("")).to eq "No result given"
+  end
+  
 end

@@ -21,4 +21,8 @@ describe SchoolResults do
   it "returns error message if input given is not a string" do
     expect(subject.check_result(1)).to eq "Input must be a comma-separated string"
   end
+
+  it "returns error message if input given is not a comma-separated string" do
+    expect(subject.check_result("Green Red")).to eq "Input must be a comma-separated string"
+  end
 end

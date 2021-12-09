@@ -2,7 +2,7 @@ class SchoolResults
 
   def check_result(string)
 
-    return "Input must be a comma-separated string" if !string.is_a?(String)
+    return "Input must be a comma-separated string" if !string.is_a?(String) || !string.include?(",") && string.include?(" ")
     return "No result given" if string.empty?
 
     results = string.split(", ")
